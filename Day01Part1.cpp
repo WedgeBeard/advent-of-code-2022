@@ -5,7 +5,7 @@ using namespace std;
 
 void Day01Part1::GetMaxCalories(FileReader fileReader)
 {
-	vector<int> d1p1StringVector = fileReader.GetIntVector("part1data.txt");
+	vector<int> d1p1StringVector = fileReader.GetIntVector("day01part1data.txt");
 	int maxValue{ 0 };
 	int currValue{ 0 };
 
@@ -22,5 +22,5 @@ void Day01Part1::GetMaxCalories(FileReader fileReader)
 		}
 	}
 
-	cout << "Highest calorie value: " << maxValue << endl;
+	cout << "DAY 01 PART 1 === Highest calorie value: " << maxValue << endl;
 }

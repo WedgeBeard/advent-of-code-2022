@@ -10,7 +10,6 @@ using namespace std;
 vector<int> FileReader::GetIntVector(string fileUrl)
 {
     vector<int> intVector;
-    int totalLinesRead = 0;
     
     ifstream file(fileUrl, ios::in);
 
@@ -24,15 +23,35 @@ vector<int> FileReader::GetIntVector(string fileUrl)
     while (getline(file, value)) {
         if (value.size() > 0) {
             intVector.push_back(stoi(value));
-            totalLinesRead++;
         }
         else {
             intVector.push_back(0);
-            totalLinesRead++;
         }
     }
 
     file.close();
-    cout << "Total lines read: " << totalLinesRead << endl;
     return intVector;
+}
+
+vector<RPSPair> FileReader::GetRPSPairs(string fileUrl)
+{
+    vector<RPSPair> pairVector;
+
+    ifstream file(fileUrl, ios::in);
+
+    if (!file) {
+        cerr << fileUrl << " - File could not be opened" << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    string opponent, player;
+
+    while (file >> opponent >> player) {
+        RPSPair pair;
+        pair.opponent = opponent;
+        pair.player = player;
+        pairVector.push_back(pair);
+    }
+
+    return pairVector;
 }

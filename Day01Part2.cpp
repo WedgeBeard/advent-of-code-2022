@@ -3,7 +3,7 @@
 
 void Day01Part2::GetTopThreeCalorieSum(FileReader fileReader)
 {
-	vector<int> d1p1StringVector = fileReader.GetIntVector("part1data.txt");
+	vector<int> d1p1StringVector = fileReader.GetIntVector("day01part1data.txt");
 	vector<int> sortedMaxCalories;
 
 	int currValue{ 0 };
@@ -23,5 +23,5 @@ void Day01Part2::GetTopThreeCalorieSum(FileReader fileReader)
 	int size = sortedMaxCalories.size() -1;
 	int combined = sortedMaxCalories[size] + sortedMaxCalories[size - 1] + sortedMaxCalories[size - 2];
 
-	cout << "Sum of highest 3 calorie totals: " << combined << endl;
+	cout << "DAY 01 PART 2 === Sum of highest 3 calorie totals: " << combined << endl;
 }
