@@ -15,4 +15,5 @@ class FileReader
 public:
 	vector<int> GetIntVector(string fileUrl);
 	vector<RPSPair> GetRPSPairs(string fileUrl);
+	vector<string> GetStringVector(string fileUrl);
 };

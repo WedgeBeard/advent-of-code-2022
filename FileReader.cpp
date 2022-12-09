@@ -55,3 +55,24 @@ vector<RPSPair> FileReader::GetRPSPairs(string fileUrl)
 
     return pairVector;
 }
+
+vector<string> FileReader::GetStringVector(string fileUrl)
+{
+    vector<string> stringVector;
+
+    ifstream file(fileUrl, ios::in);
+
+    if (!file) {
+        cerr << "File could not be opened." << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    string value;
+
+    while (file >> value) {
+        stringVector.push_back(value);
+    }
+
+    file.close();
+    return stringVector;
+}

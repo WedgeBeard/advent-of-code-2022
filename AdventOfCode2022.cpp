@@ -7,14 +7,21 @@ Day01Part1 d1p1;
 Day01Part2 d1p2;
 Day02Part1 d2p1;
 Day02Part2 d2p2;
+Day03Part1 d3p1;
+Day03Part2 d3p2;
 
 int main() {
 	cout << "Program started." << endl;
 	FileReader fileReader;
 
+	/*
 	d1p1.GetMaxCalories(fileReader);
 	d1p2.GetTopThreeCalorieSum(fileReader);
 	d2p1.GetPRSScore(fileReader);
 	d2p2.GetPRSScore(fileReader);
+	d3p1.CalculateSumOfPriorities(fileReader);
+	*/
+	d3p2.CalculateSumOfCommonItem(fileReader);
+
 	return 0;
 };
