@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include "RPSPair.h"
+#include "CleanUpCrewRanges.h"
 
 using namespace std;
 
@@ -16,4 +17,5 @@ public:
 	vector<int> GetIntVector(string fileUrl);
 	vector<RPSPair> GetRPSPairs(string fileUrl);
 	vector<string> GetStringVector(string fileUrl);
+	vector<CleanUpCrewRanges> GetCleanUpCrewRanges(string fileUrl);
 };

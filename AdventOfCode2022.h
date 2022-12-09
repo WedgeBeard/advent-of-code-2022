@@ -6,6 +6,8 @@
 #include "Day02Part2.h"
 #include "Day03Part1.h"
 #include "Day03Part2.h"
+#include "Day04Part1.h"
+#include "Day04Part2.h"
 
 class AdventOfCode2022 {
 };

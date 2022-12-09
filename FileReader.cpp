@@ -76,3 +76,34 @@ vector<string> FileReader::GetStringVector(string fileUrl)
     file.close();
     return stringVector;
 }
+
+vector<CleanUpCrewRanges> FileReader::GetCleanUpCrewRanges(string fileUrl)
+{
+    vector<CleanUpCrewRanges> crewRanges;
+
+    ifstream file(fileUrl, ios::in);
+
+    if (!file) {
+        cerr << "File could not be opened." << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    string elf1Min, elf1Max, elf2Min, elf2Max;
+
+    while (getline(file, elf1Min, '-') &&
+        getline(file, elf1Max, ',') &&
+        getline(file, elf2Min, '-') &&
+        getline(file, elf2Max)) {
+        
+        CleanUpCrewRanges crew;
+        crew.elf1Min = stoi(elf1Min);
+        crew.elf1Max = stoi(elf1Max);
+        crew.elf2Min = stoi(elf2Min);
+        crew.elf2Max = stoi(elf2Max);
+        crewRanges.push_back(crew);
+    }
+
+    file.close();
+
+    return crewRanges;
+}

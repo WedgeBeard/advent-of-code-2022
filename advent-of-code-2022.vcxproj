@@ -134,15 +134,20 @@
     <ClCompile Include="Day02Part2.cpp" />
     <ClCompile Include="Day03Part1.cpp" />
     <ClCompile Include="Day03Part2.cpp" />
+    <ClCompile Include="Day04Part1.cpp" />
+    <ClCompile Include="Day04Part2.cpp" />
     <ClCompile Include="FileReader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode2022.h" />
+    <ClInclude Include="CleanUpCrewRanges.h" />
     <ClInclude Include="Day01Part1.h" />
     <ClInclude Include="Day01Part2.h" />
     <ClInclude Include="Day02Part2.h" />
     <ClInclude Include="Day03Part1.h" />
     <ClInclude Include="Day03Part2.h" />
+    <ClInclude Include="Day04Part1.h" />
+    <ClInclude Include="Day04Part2.h" />
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="Day02Part1.h" />
     <ClInclude Include="RPSPair.h" />
@@ -153,6 +158,8 @@
     <Text Include="day02testdata.txt" />
     <Text Include="day03part1data.txt" />
     <Text Include="day03testdata.txt" />
+    <Text Include="day04part1data.txt" />
+    <Text Include="day04testdata.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

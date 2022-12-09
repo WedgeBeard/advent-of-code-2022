@@ -39,6 +39,12 @@
     <ClCompile Include="Day03Part2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day04Part1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day04Part2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode2022.h">
@@ -68,6 +74,15 @@
     <ClInclude Include="Day03Part2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day04Part1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day04Part2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CleanUpCrewRanges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="day01part1data.txt">
@@ -83,6 +98,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="day03part1data.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day04testdata.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day04part1data.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
