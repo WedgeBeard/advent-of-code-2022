@@ -11,9 +11,11 @@ Day02Part2 d2p2;
 Day03Part1 d3p1;
 Day03Part2 d3p2;
 Day04Part1 d4p1;
+Day04Part2 d4p2;
+Day05Part1 d5p1;
 */
 
-Day04Part2 d4p2;
+Day05Part2 d5p2;
 
 int main() {
 	cout << "Program started." << endl;
@@ -27,9 +29,11 @@ int main() {
 	d3p1.CalculateSumOfPriorities(fileReader);
 	d3p2.CalculateSumOfCommonItem(fileReader);
 	d4p1.CalculateContainment(fileReader);
+	d4p2.CalculateOverlap(fileReader);
+	d5p1.CalculateTopCrates(fileReader);
 	*/
 
-	d4p2.CalculateOverlap(fileReader);
+	d5p2.CalculateTopCrates(fileReader);
 
 	return 0;
 };

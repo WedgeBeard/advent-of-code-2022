@@ -107,3 +107,29 @@ vector<CleanUpCrewRanges> FileReader::GetCleanUpCrewRanges(string fileUrl)
 
     return crewRanges;
 }
+
+vector<StackMove> FileReader::GetStackMoves(string fileUrl)
+{
+    vector<StackMove> moves;
+
+    ifstream file(fileUrl, ios::in);
+
+    if (!file) {
+        cerr << "File could not be opened." << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    string trash, quantity, from, to;
+
+    while (file >> trash >> quantity >> trash >> from >> trash >> to) {
+        StackMove move;
+        move.quantity = stoi(quantity);
+        move.from = stoi(from);
+        move.to = stoi(to);
+        moves.push_back(move);
+    }
+    
+    file.close();
+
+    return moves;
+}

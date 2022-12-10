@@ -10,10 +10,7 @@ void Day04Part2::CalculateOverlap(FileReader fileReader)
 	{
 		CleanUpCrewRanges crew = cleanUpCrew[teamIndex];
 
-		if (((crew.elf1Min >= crew.elf2Min && crew.elf1Min <= crew.elf2Max) || 
-			(crew.elf1Max >= crew.elf2Min && crew.elf1Max <= crew.elf2Max)) ||
-			((crew.elf2Min >= crew.elf1Min && crew.elf2Min <= crew.elf1Max) || 
-			(crew.elf2Max >= crew.elf1Min && crew.elf2Max <= crew.elf1Max))) {
+		if (crew.elf1Min <= crew.elf2Max && crew.elf1Max >= crew.elf2Min) {
 			overlapCount++;
 		}
 	}
