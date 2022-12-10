@@ -5,36 +5,36 @@ void Day05Part2::CalculateTopCrates(FileReader fileReader)
 	string topOfStacks;
 	vector<stack<char>> stacks;
 
-	stacks = InitializeTestStack();
-	//stacks = InitializeStack();
+	//stacks = InitializeTestStack();
+	//vector<StackMove> moves = fileReader.GetStackMoves("day05testdata.txt");
 
-	vector<StackMove> moves = fileReader.GetStackMoves("day05testdata.txt");
+	stacks = InitializeStack();
+	vector<StackMove> moves = fileReader.GetStackMoves("day05part1data.txt");
+
 
 	for (size_t currMove = 0; currMove < moves.size(); currMove++)
 	{
 		int fromStack = moves[currMove].from - 1;
 		int toStack = moves[currMove].to - 1;
 		int quantity = moves[currMove].quantity;
-		stack<char> tempStack;
+		deque<char> queue;
 
 		for (size_t currIndex = 0; currIndex < quantity; currIndex++)
 		{
-			tempStack.push(stacks[fromStack].top());
+			queue.push_back(stacks[fromStack].top());
 			stacks[fromStack].pop();
 		}
 
-		for (size_t i = 0; i < tempStack.size(); i++)
+		while(queue.size() > 0)
 		{
-			stacks[toStack].push(tempStack.top());
-			tempStack.pop();
+			stacks[toStack].push(queue.back());
+			queue.pop_back();
 		}
 	}
 
 	for (size_t i = 0; i < stacks.size(); i++)
 	{
-		if (stacks[i].size() > 0) {
-			topOfStacks += (stacks[i].top());
-		}
+		topOfStacks += (stacks[i].top());
 	}
 
 	cout << "DAY 05 PART 2 === Tops of all stacks: " << topOfStacks << endl;

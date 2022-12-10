@@ -2,6 +2,7 @@
 #include "FileReader.h"
 #include <stack>
 #include "StackMove.h"
+#include <deque>
 
 class Day05Part2 {
 public:
