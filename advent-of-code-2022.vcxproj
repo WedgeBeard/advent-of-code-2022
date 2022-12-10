@@ -138,6 +138,7 @@
     <ClCompile Include="Day04Part2.cpp" />
     <ClCompile Include="Day05Part1.cpp" />
     <ClCompile Include="Day05Part2.cpp" />
+    <ClCompile Include="Day06Part1.cpp" />
     <ClCompile Include="FileReader.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +153,8 @@
     <ClInclude Include="Day04Part2.h" />
     <ClInclude Include="Day05Part1.h" />
     <ClInclude Include="Day05Part2.h" />
+    <ClInclude Include="Day06Part1.h" />
+    <ClInclude Include="Day06Part2.h" />
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="Day02Part1.h" />
     <ClInclude Include="RPSPair.h" />
@@ -167,6 +170,13 @@
     <Text Include="day04testdata.txt" />
     <Text Include="day05part1data.txt" />
     <Text Include="day05testdata.txt" />
+    <Text Include="day06part1data.txt" />
+    <Text Include="day06testdata5.txt" />
+    <Text Include="day06testdata1.txt" />
+    <Text Include="day06testdata2.txt" />
+    <Text Include="day06testdata3.txt" />
+    <Text Include="day06testdata4.txt" />
+    <Text Include="day06testdata6.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

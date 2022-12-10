@@ -13,9 +13,11 @@ Day03Part2 d3p2;
 Day04Part1 d4p1;
 Day04Part2 d4p2;
 Day05Part1 d5p1;
+Day05Part2 d5p2;
 */
 
-Day05Part2 d5p2;
+Day06Part1 d6p1;
+Day06Part2 d6p2;
 
 int main() {
 	cout << "Program started." << endl;
@@ -31,9 +33,10 @@ int main() {
 	d4p1.CalculateContainment(fileReader);
 	d4p2.CalculateOverlap(fileReader);
 	d5p1.CalculateTopCrates(fileReader);
+	d5p2.CalculateTopCrates(fileReader);
 	*/
 
-	d5p2.CalculateTopCrates(fileReader);
+	d6p1.FindFirstMarker(fileReader);
 
 	return 0;
 };

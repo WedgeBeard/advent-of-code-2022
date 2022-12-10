@@ -51,6 +51,9 @@
     <ClCompile Include="Day05Part2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day06Part1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode2022.h">
@@ -98,6 +101,12 @@
     <ClInclude Include="StackMove.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Day06Part1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day06Part2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="day01part1data.txt">
@@ -125,6 +134,27 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="day05part1data.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06part1data.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata5.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day06testdata6.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
